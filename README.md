@@ -1,54 +1,35 @@
-# React + TypeScript + Vite
+# E-Commerce App Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Task Description
 
-Currently, two official plugins are available:
+### 1. Build a small e-commerce app using React and Redux
+- The app should include:
+  - **Product List**: Display a list of products.
+  - **Shopping Cart**: Allow users to add/remove items from the cart.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 2. Fetch Products from API
+- Use the following API to fetch and display products on the product page:  
+  **API Endpoint:** [`https://fakestoreapi.com/products`](https://fakestoreapi.com/products)
 
-## Expanding the ESLint configuration
+### 3. Implement a Search Filter
+- Create a **Search Filter Component** that filters the product list based on user input.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 4. Implement Pagination
+- Implement a **Pagination Component** for navigating through the product list.
+- **Do not** use any third-party plugins for pagination.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 5. Styling with Tailwind CSS
+- Use **Tailwind CSS** to style the application.
+- Ensure a clean, user-friendly UI.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Instructions
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Follow a proper folder structure** to maintain clean and scalable code.
+2. **Focus on UI design and validations** to enhance user experience.
+3. **Do not use any third-party plugins** for table and pagination.
+4. **Complete the task** and share the final project as a **ZIP file** via Google Drive or Dropbox link.
+5. **Ensure full responsiveness** for mobile and desktop views.
+
+
